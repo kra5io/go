@@ -29,11 +29,11 @@ func main() {
 	fmt.Println(p1.first_name)
 	fmt.Println(p1.last_name)
 	for k, v := range p1.favourite_ice_cream_flavors {
-		fmt.Println(k, v)
+		fmt.Println("\t", k, v)
 	}
 	fmt.Println(p2.first_name)
 	fmt.Println(p2.last_name)
 	for k, v := range p2.favourite_ice_cream_flavors {
-		fmt.Println(k, v)
+		fmt.Println("\t", k, v)
 	}
 }
