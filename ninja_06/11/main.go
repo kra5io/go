@@ -15,11 +15,13 @@ func main() {
 }
 
 type kur interface {
+	add()
 }
 
 func sum(s interface{}) {
 	switch s.(type) {
 	case []int:
+		s = int(s)
 		sum := 0
 		for _, i := range s {
 			sum += i
