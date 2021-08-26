@@ -21,7 +21,9 @@ type kur interface {
 func sum(s interface{}) {
 	switch s.(type) {
 	case []int:
-		s = int(s)
+		fmt.Printf("%T\n", s)
+		penis := int(s)
+		fmt.Printf("%T\n", penis)
 		sum := 0
 		for _, i := range s {
 			sum += i
