@@ -11,5 +11,11 @@ func main() {
 		c <- 42
 	}()
 
-	fmt.Println(<-c)
+	v, ok := <-c
+	fmt.Println(v, ok)
+
+	close(c)
+
+	v, ok = <-c
+	fmt.Println(v, ok)
 }
