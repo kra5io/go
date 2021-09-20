@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/kra5io/go/ninja_012/01/dog"
+	"github.com/kra5io/go/ninja_12/01/dog"
 )
 
 type canine struct {
